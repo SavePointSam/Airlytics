@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "@airlytics/web",
+  "scripts": {
+    "build": "docker build --no-cache --tag airlytics:latest ./"
+  },
+  "engines": {
+    "node": ">=14.13.0",
+    "yarn": ">=1.22.4"
+  },
+  "workspaces": [
+    "applications/*"
+  ],
+  "devDependencies": {
+    "lerna": "3.22.1"
+  }
+}
