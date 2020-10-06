@@ -12,16 +12,18 @@ export interface Props {
   justifyContent?: Justify;
   alignItems?: Align;
   flex?: string;
+  width?: string;
   children?: React.ReactNode;
 }
 
 const Box = styled('div')<Props>`
   display: flex;
   flex-flow: ${({ flexDirection = 'row' }) => flexDirection}
-    ${({ wrap = false }) => (wrap ? 'wrap' : 'no-wrap')};
+    ${({ wrap = false }) => (wrap ? 'wrap' : 'nowrap')};
   justify-content: ${({ justifyContent = 'flex-start' }) => justifyContent};
   align-items: ${({ alignItems = 'flex-start' }) => alignItems};
   flex: ${({ flex = '0 1 auto' }) => flex};
+  width: ${({ width = 'auto' }) => width};
   position: relative;
 `;
 
