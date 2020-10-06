@@ -13,10 +13,16 @@ export interface Props {
   alignItems?: Align;
   flex?: string;
   width?: string;
+  height?: string;
+  padding?: string;
+  backgroundColor?: string;
+  boxShadow?: string;
   children?: React.ReactNode;
 }
 
 const Box = styled('div')<Props>`
+  box-sizing: border-box;
+  position: relative;
   display: flex;
   flex-flow: ${({ flexDirection = 'row' }) => flexDirection}
     ${({ wrap = false }) => (wrap ? 'wrap' : 'nowrap')};
@@ -24,7 +30,10 @@ const Box = styled('div')<Props>`
   align-items: ${({ alignItems = 'flex-start' }) => alignItems};
   flex: ${({ flex = '0 1 auto' }) => flex};
   width: ${({ width = 'auto' }) => width};
-  position: relative;
+  height: ${({ height = 'auto' }) => height};
+  padding: ${({ padding = '0' }) => padding};
+  background-color: ${({ backgroundColor = 'transparent' }) => backgroundColor};
+  box-shadow: ${({ boxShadow = 'none' }) => boxShadow};
 `;
 
 export default Box;
