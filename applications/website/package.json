@@ -10,8 +10,10 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "history": "^5.0.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "6.0.0-beta.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
