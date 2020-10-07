@@ -117,7 +117,7 @@ export default function HomePage() {
           <h2 style={{ marginBottom: '0' }}>Maecenas placerat consectetur</h2>
 
           <Column padding="36px 0 0" alignItems="center">
-            <Button>Get Started</Button>
+            <Button to="contact">Get Started</Button>
 
             <Box padding="36px 0 0" textAlign="center">
               <p>Sed eleifend, urna ut tincidunt tincidunt.</p>

@@ -45,7 +45,9 @@ export default function HomeHero() {
             Pellentesque nec lectus ut sem faucibus convallis in in libero.
           </p>
           <Column padding="24px 0 0">
-            <Button>Get Started</Button>
+            <Button to="contact" theme="secondary">
+              Get Started
+            </Button>
           </Column>
         </Column>
       </Column>
