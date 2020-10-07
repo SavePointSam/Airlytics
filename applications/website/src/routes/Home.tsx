@@ -5,6 +5,9 @@ import Feature from '../components/Feature';
 import Column from '../components/Column';
 import Button from '../components/Button';
 import Box from '../components/Box';
+import { ReactComponent as FeatureOne } from '../images/feature_one.svg';
+import { ReactComponent as FeatureTwo } from '../images/feature_two.svg';
+import { ReactComponent as FeatureThree } from '../images/feature_three.svg';
 
 function CenteredBanner() {
   return (
@@ -50,6 +53,10 @@ export default function HomePage() {
                   volutpat in blandit ac, finibus eget enim.
                 </p>
               </LeftContent>
+
+              <RightContent isImage={true}>
+                <FeatureOne />
+              </RightContent>
             </React.Fragment>
           )}
         </Feature>
@@ -57,6 +64,10 @@ export default function HomePage() {
         <Feature>
           {({ LeftContent, RightContent }) => (
             <React.Fragment>
+              <LeftContent isImage={true}>
+                <FeatureTwo />
+              </LeftContent>
+
               <RightContent>
                 <h2>Donec mi lectus</h2>
                 <p>
@@ -86,6 +97,10 @@ export default function HomePage() {
                   volutpat in blandit ac, finibus eget enim.
                 </p>
               </LeftContent>
+
+              <RightContent isImage={true}>
+                <FeatureThree />
+              </RightContent>
             </React.Fragment>
           )}
         </Feature>

@@ -4,7 +4,6 @@ import { Global, css } from '@emotion/core';
 
 import { ModalManager } from './context/modal';
 import MainNavigation from './components/MainNavigation';
-import Column from './components/Column';
 import Footer from './components/Footer';
 import HomePage from './routes/Home';
 import AboutPage from './routes/About';

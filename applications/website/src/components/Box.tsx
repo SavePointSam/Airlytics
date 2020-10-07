@@ -12,6 +12,7 @@ export interface Props {
   justifyContent?: Justify;
   alignItems?: Align;
   alignSelf?: Align;
+  order?: string;
   flex?: string;
   width?: string;
   minWidth?: string;
@@ -35,6 +36,7 @@ const Box = styled('div')<Props>`
   justify-content: ${({ justifyContent = 'flex-start' }) => justifyContent};
   align-items: ${({ alignItems = 'flex-start' }) => alignItems};
   align-self: ${({ alignSelf = 'auto' }) => alignSelf};
+  order: ${({ order = '0' }) => order};
   flex: ${({ flex = '0 1 auto' }) => flex};
   width: ${({ width = 'auto' }) => width};
   min-width: ${({ minWidth = 'none' }) => minWidth};
