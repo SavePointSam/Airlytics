@@ -12,7 +12,7 @@ export default function Footer() {
       backgroundColor="#f6f6f6"
       justifyContent="space-between"
     >
-      <p style={{ fontSize: '12px' }}>&copy; Airlytics 2020</p>
+      <p style={{ fontSize: '12px', margin: '0' }}>&copy; Airlytics 2020</p>
 
       <Link to="contact">Contact</Link>
     </Row>
