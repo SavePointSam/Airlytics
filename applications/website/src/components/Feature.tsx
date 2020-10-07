@@ -1,5 +1,6 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
+import styled from '@emotion/styled/macro';
 
 import Column from './Column';
 import Box from './Box';
@@ -24,7 +25,6 @@ function LeftContent({ children, isImage = false }: ContentProps) {
   return (
     <Column
       width={isSmall === true ? '100%' : '50%'}
-      alignSelf="flex-start"
       margin={margin}
       padding={isSmall === true ? '0' : '0 12px 0 0'}
       order={order}
@@ -63,19 +63,27 @@ interface Props {
   }) => React.ReactNode;
 }
 
+const FeatureContainer = styled(Box)`
+  padding: 64px 24px 0;
+
+  &:last-of-type {
+    padding: 64px 24px;
+  }
+`;
+
 export default function Feature({ children }: Props) {
   const isSmall = useMediaQuery({ query: smallQuery });
 
   return (
-    <Box
+    <FeatureContainer
       flexDirection={isSmall === true ? 'column' : 'row'}
       width="100%"
       maxWidth="1024px"
       textAlign="center"
+      justifyContent="center"
       alignItems="center"
-      padding="64px 24px"
     >
       {children({ LeftContent, RightContent })}
-    </Box>
+    </FeatureContainer>
   );
 }

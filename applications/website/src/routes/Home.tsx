@@ -43,7 +43,7 @@ export default function HomePage() {
           {({ LeftContent, RightContent }) => (
             <React.Fragment>
               <LeftContent>
-                <h2>Donec mi lectus</h2>
+                <h2>Nunc varius magna</h2>
                 <p>
                   Nam nisi tellus, faucibus pharetra porta eu, aliquet vel
                   mauris. Sed mauris ipsum, egestas ut lobortis non, luctus eget
@@ -69,7 +69,7 @@ export default function HomePage() {
               </LeftContent>
 
               <RightContent>
-                <h2>Donec mi lectus</h2>
+                <h2>Fusce commodo felis</h2>
                 <p>
                   Nam nisi tellus, faucibus pharetra porta eu, aliquet vel
                   mauris. Sed mauris ipsum, egestas ut lobortis non, luctus eget
@@ -87,7 +87,7 @@ export default function HomePage() {
           {({ LeftContent, RightContent }) => (
             <React.Fragment>
               <LeftContent>
-                <h2>Donec mi lectus</h2>
+                <h2>Sed mauris ipsum</h2>
                 <p>
                   Nam nisi tellus, faucibus pharetra porta eu, aliquet vel
                   mauris. Sed mauris ipsum, egestas ut lobortis non, luctus eget
