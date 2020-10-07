@@ -20,6 +20,7 @@ export default function App() {
           }
 
           p {
+            font-size: 18px;
             margin: 0 0 0.67em;
           }
 
@@ -34,11 +35,31 @@ export default function App() {
           }
 
           h1 {
+            font-size: 52px;
             margin: 0 0 0.67em;
           }
 
           h2 {
+            font-size: 32px;
             margin: 0 0 0.83em;
+          }
+
+          .invert {
+            color: #ffffff;
+          }
+
+          @media (max-width: 768px) {
+            h1 {
+              font-size: 32px;
+            }
+
+            h2 {
+              font-size: 24px;
+            }
+
+            p {
+              font-size: 15px;
+            }
           }
         `}
       />

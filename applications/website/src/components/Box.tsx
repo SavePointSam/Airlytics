@@ -7,6 +7,13 @@ type Justify = 'flex-start' | 'flex-end' | 'center' | 'space-between';
 type Align = 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch';
 
 export interface Props {
+  position?: 'relative' | 'absolute';
+  top?: string;
+  right?: string;
+  bottom?: string;
+  left?: string;
+  zIndex?: string;
+  overflow?: string;
   flexDirection?: Direction;
   wrap?: boolean;
   justifyContent?: Justify;
@@ -29,7 +36,13 @@ export interface Props {
 
 const Box = styled('div')<Props>`
   box-sizing: border-box;
-  position: relative;
+  position: ${({ position = 'relative' }) => position};
+  top: ${({ top = 'auto' }) => top};
+  right: ${({ right = 'auto' }) => right};
+  bottom: ${({ bottom = 'auto' }) => bottom};
+  left: ${({ left = 'auto' }) => left};
+  zindex: ${({ zIndex = '0' }) => zIndex};
+  overflow: ${({ overflow = 'visible' }) => overflow};
   display: flex;
   flex-flow: ${({ flexDirection = 'row' }) => flexDirection}
     ${({ wrap = false }) => (wrap ? 'wrap' : 'nowrap')};
