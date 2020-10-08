@@ -32,6 +32,7 @@ export default function HomeHero() {
         alignItems="center"
       >
         <img
+          alt="Friendly Office Background"
           src={heroImageSmall}
           srcSet={`${heroImageTiny} 300w, ${heroImageSmall} 1024w, ${heroImageLarge} 1366w, ${heroImageXlarge} 1920w`}
           style={{ opacity: '0.5' }}

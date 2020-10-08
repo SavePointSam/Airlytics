@@ -34,7 +34,7 @@ function CenteredBanner() {
 
 export default function HomePage() {
   return (
-    <Column minWidth="100%" minHeight="100%">
+    <Column>
       <HomeHero />
       <CenteredBanner />
 
