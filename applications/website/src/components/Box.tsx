@@ -30,6 +30,7 @@ export interface Props {
   margin?: string;
   backgroundColor?: string;
   boxShadow?: string;
+  borderRadius?: string;
   textAlign?: string;
   children?: React.ReactNode;
 }
@@ -61,6 +62,7 @@ const Box = styled('div')<Props>`
   background-color: ${({ backgroundColor = 'transparent' }) => backgroundColor};
   text-align: ${({ textAlign = 'left' }) => textAlign};
   box-shadow: ${({ boxShadow = 'none' }) => boxShadow};
+  border-radius: ${({ borderRadius = '0' }) => borderRadius};
 `;
 
 export default Box;
